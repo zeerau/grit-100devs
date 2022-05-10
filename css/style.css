@@ -27,63 +27,24 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-
-/******************************************
-/* HEADER
-/*******************************************/
-header {
-  height: 40px;
+body{
   width: 100%;
 }
-header nav{
-  display: flex;
-  justify-content: end;
+header nav ul{
+  margin: 2rem auto;
 }
-header nav ul {
-  margin: 0px;
-  padding: 0px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: end;
-  margin-right: 180px;
-  align-content: center;
-}
-header nav ul li{
-  margin-left:30px;
-  list-style: none;
-  font-size: 20px;
-  color: black;
-}
-header nav ul li a{
-  text-decoration: none;
-  color: #2A547E;
+main{
+  background-size: 100%;
 }
 
-/******************************************
-/* MAIN
-/*******************************************/
-main {
-  background-image: url("/background.jpg");
-  background-size: cover;
-	background-repeat: no-repeat;
-  height: 700px;
-}
-main .mainh1{
-  display: flex;
-  flex-direction: column;
-  padding-left: 100px;
-  padding-top: 2rem;
-}
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   line-height: 1.3;
-  width: 50%;
+  width: 70%;
   font-family: Raleway;
   /* border: 2px solid red; */
+  text-align: center;
+  background-color: #41b2ce;
 }
 form input{
   width: 400px;
@@ -104,280 +65,134 @@ form input{
 main .iconimages{
   display: flex;
   /* flex-wrap: wrap; */
-  padding: 1em;
+  padding: 2rem;
   align-items: center;
   justify-content: space-evenly;
-  width: 30%;
+  width: 50%;
   /* border: 2px solid red; */
-  margin-left: 2rem;
+  margin:0 auto;
 }
-main .fa-brands{
-  color: orange;
-}
-/******************************************
-/* DISCOVER OUR RESTAURANT SECTION
-/*******************************************/
 .middlewhite{
-  height: 600px;
-  /* display: flex;
-  flex-direction: column; */
-  background-image: url("/middle-background.jpg");
-  background-size: cover;
-	background-repeat: no-repeat;
- /* justify-content: center;
- align-items: center; */
- position: relative;
+  background-size: 100%;
 }
 .left-position{
   position: absolute;
-  left: 45%;
-  top: 20%;
-  width: 500px;
-}
-.middlewhite h5{
-  color: orange;
-  padding-bottom: 1rem;
-}
-.middlewhite h2{
-  font-size: 50px;
-  font-family: Raleway;
-  padding-bottom: 2rem;
-}
-.middlewhite p{
-  padding-bottom: 1.5rem;
-}
-.middlewhite button{
-  background-color: orange;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-}
-.third-section{
-  /* margin: 2rem; */
-  background-color: #F2F6F7;
-}
-.third-section h5{
+  left: 10%;
+  top: 2%;
+  width: 80%;
   text-align: center;
-  color: orange;
-margin-bottom: 1rem;
-padding-top: 1rem;
-}
-.third-section h2{
-  text-align: center;
-  font-family: Raleway;
-  font-size: 3rem;
-}
-.third-section ul{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-.third-section li{
+  background-color: hsl(192, 12%, 80%);
   padding: 1rem;
-  border-bottom: 1px solid black;
+  opacity: 0.8;
 }
-.third-section li:first-child {
-  color: orange;
-  border-bottom: 1px solid orange;
-}
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
 .part1,.part2{
-  display: flex;
-  justify-content: center;
- padding-bottom: 2rem;
+  display: inline-block;
+  margin: 0 .5rem;
 }
 .part1 img,.part2 img{
-width: 250px;
-height: 250px;
-object-fit: contain;
-}
-.description{
-  color: white;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(9, 10, 10, 0.72);
- align-items: center;
-  visibility: hidden;
-  opacity: 0;
-display: block;
-height: 250px;
-  width: 250px;
-  text-align: center;
-  /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
-}
-.description h3,.description p,.description button{
-  padding: 2rem;
-}
-.description .fa-star{
-  color: orange;
-}
-.description button{
-  border: none;
-  background-color: orange;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-}
-.img-wrap{
-  position: relative;
+  width: 270px;
   height: 250px;
-  width: 250px;
-}
-.img-wrap:hover .description{
-  visibility: visible;
-  opacity: 1;
-}
-#book{
-  background-image: url("/nordwood-themes-KsIfRQkR5vM-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 900px;
-}
-.bookings{
-  padding: 4rem;
-}
-.tables{
-  text-align: center;
-}
-.spanh{
-  color: orange;
-}
-.tables h2{
-  font-family: raleway;
-  font-size: 3rem;
-  padding: 1rem 0 2rem;
-}
-.tables p{
-  font-family: raleway;
-  color: orange;
-  font-size: 2rem;
-  font-weight: bold;
-  padding: 1rem 0;
-}
-.timings{
-  display: flex;
-  justify-content: space-between;
-  width: 800px;
-  margin: 0 auto 2rem;
-}
-.phone{
-  color: orange;
-  background-color: black;
-  display: block;
-  visibility: visible;
-}
-.video_img img{
-  display: block;
-  margin: 0 auto;
-}
-#testimonials{
-  text-align: center;
-  padding: 3rem;
- 
-}
-.review .customer{
-  color: orange;
-}
-.review h2{
-  font-family: raleway;
-  font-size: 3rem;
-  padding: 1rem 0 2rem;
-}
-.review .reviewguy{
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  padding-bottom: 1rem;
-}
-.review img{
-  display: block;
-  margin: 0 auto;
-}
-.stars{
-  padding: 2rem 0;
-}
-.review p{
-  width: 900px;
-  text-align: center;
-  margin: 0 auto;
-}
-.wrapper{
-  margin: 2rem;
-  background-color: #F2F6F7;
-  font-family: "Open sans";
-  padding: 3rem;
-}
-.footer-section{
-  display: flex;
-  justify-content: space-around;
-  padding: 2rem 3rem;
+  object-fit: contain;
   }
-  .logo{
-    
-    flex-basis: 25%;
-  }
-.logo img{
-width: 100px;
-height: 100px;
-object-fit: contain;
-padding: 0;
-margin: 0;
-}
-.logo p{
-  width: 80%;
-}
-.contact{
-  font-family: raleway;
-  font-size: 1.5rem;
-  padding-bottom: 2rem;
-}
-.footer1 p{
-  padding-bottom: 2rem;
-}
-.footer1 input{
-  width: 250px;
-  height: 40px;
-  border-radius: 3px;
-  outline: none;
-  border: 1px solid;
-}
-.bottom_line{
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem 4rem;
-  border-top: 1px solid #414646;
-
-}
-.icons i{
-  padding-left: 1rem;
-  color: orange;
-}
-@media (max-width: 768px){
-  body{
-    width: 100%;
-  }
-  header nav ul{
-    margin: 2rem auto;
-  }
-  main{
+  #book{
     background-size: 100%;
   }
- 
+  .timings{
+    display: block;
+    
+  }
+  .timings div{
+    margin-left: 9rem;
+    padding-bottom: 2rem;
+  }
+  .video_img img{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+  }
+  .review p{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .footer-section{
+    display: block;
+    text-align: center;
+    padding: 2rem 3rem;
+    }
+    .bottom_line{
+      display: block;
+      
+      padding: 2rem 4rem;
+      border-top: 1px solid #414646;
+    
+    }
+    .bottom_line p{
+      padding-bottom: 2rem;
+    }
+    .third-section{
+      /* margin: 2rem; */
+      background-color: #F2F6F7;
+      width: 100%;
+    }
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/******************************************
+/* HEADER
+/*******************************************/
+
+@media (min-width: 768px){
+  header {
+    height: 40px;
+    width: 100%;
+  }
+  header nav{
+    display: flex;
+    justify-content: end;
+  }
+  header nav ul {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+    margin-right: 180px;
+    align-content: center;
+  }
+  header nav ul li{
+    margin-left:30px;
+    list-style: none;
+    font-size: 20px;
+    color: black;
+  }
+  header nav ul li a{
+    text-decoration: none;
+    color: #2A547E;
+  }
+  
+  /******************************************
+  /* MAIN
+  /*******************************************/
+  main {
+    background-image: url("/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+  }
+  main .mainh1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-top: 2rem;
+  }
   h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     line-height: 1.3;
-    width: 70%;
+    width: 50%;
     font-family: Raleway;
     /* border: 2px solid red; */
-    text-align: center;
-    background-color: #41b2ce;
   }
   form input{
     width: 400px;
@@ -398,74 +213,259 @@ margin: 0;
   main .iconimages{
     display: flex;
     /* flex-wrap: wrap; */
-    padding: 2rem;
+    padding: 1rem;
     align-items: center;
     justify-content: space-evenly;
-    width: 50%;
+    width: 30%;
     /* border: 2px solid red; */
-    margin:0 auto;
+    margin-left: 2rem;
   }
+  main .fa-brands{
+    color: orange;
+  }
+  /******************************************
+  /* DISCOVER OUR RESTAURANT SECTION
+  /*******************************************/
   .middlewhite{
-    background-size: 100%;
+    height: 600px;
+    /* display: flex;
+    flex-direction: column; */
+    background-image: url("/middle-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   /* justify-content: center;
+   align-items: center; */
+   position: relative;
   }
   .left-position{
     position: absolute;
-    left: 10%;
-    top: 2%;
-    width: 80%;
-    text-align: center;
-    background-color: hsl(192, 12%, 80%);
-    padding: 1rem;
-    opacity: 0.8;
+    left: 45%;
+    top: 20%;
+    width: 500px;
   }
+  .middlewhite h5{
+    color: orange;
+    padding-bottom: 1rem;
+  }
+  .middlewhite h2{
+    font-size: 50px;
+    font-family: Raleway;
+    padding-bottom: 2rem;
+  }
+  .middlewhite p{
+    padding-bottom: 1.5rem;
+  }
+  .middlewhite button{
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .third-section{
+    /* margin: 2rem; */
+    background-color: #F2F6F7;
+  }
+  .third-section h5{
+    text-align: center;
+    color: orange;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  }
+  .third-section h2{
+    text-align: center;
+    font-family: Raleway;
+    font-size: 3rem;
+  }
+  .third-section ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .third-section li{
+    padding: 1rem;
+    border-bottom: 1px solid black;
+  }
+  .third-section li:first-child {
+    color: orange;
+    border-bottom: 1px solid orange;
+  }
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
   .part1,.part2{
-    display: inline-block;
-    margin: 0 .5rem;
+    display: flex;
+    justify-content: center;
+   padding-bottom: 2rem;
   }
   .part1 img,.part2 img{
-    width: 270px;
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  }
+  .description{
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(9, 10, 10, 0.72);
+   align-items: center;
+    visibility: hidden;
+    opacity: 0;
+  display: block;
+  height: 250px;
+    width: 250px;
+    text-align: center;
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+  .description h3,.description p,.description button{
+    padding: 2rem;
+  }
+  .description .fa-star{
+    color: orange;
+  }
+  .description button{
+    border: none;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .img-wrap{
+    position: relative;
     height: 250px;
-    object-fit: contain;
+    width: 250px;
+  }
+  .img-wrap:hover .description{
+    visibility: visible;
+    opacity: 1;
+  }
+  #book{
+    background-image: url("/nordwood-themes-KsIfRQkR5vM-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+  }
+  .bookings{
+    padding: 4rem;
+  }
+  .tables{
+    text-align: center;
+  }
+  .spanh{
+    color: orange;
+  }
+  .tables h2{
+    font-family: raleway;
+    font-size: 3rem;
+    padding: 1rem 0 2rem;
+  }
+  .tables p{
+    font-family: raleway;
+    color: orange;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+  }
+  .timings{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: 0 auto 2rem;
+  }
+  .phone{
+    color: orange;
+    background-color: black;
+    display: block;
+    visibility: visible;
+  }
+  .video_img img{
+    display: block;
+    margin: 0 auto;
+  }
+  #testimonials{
+    text-align: center;
+    padding: 3rem;
+   
+  }
+  .review .customer{
+    color: orange;
+  }
+  .review h2{
+    font-family: raleway;
+    font-size: 3rem;
+    padding: 1rem 0 2rem;
+  }
+  .review .reviewguy{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-bottom: 1rem;
+  }
+  .review img{
+    display: block;
+    margin: 0 auto;
+  }
+  .stars{
+    padding: 2rem 0;
+  }
+  .review p{
+    width: 900px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .wrapper{
+    margin: 2rem;
+    background-color: #F2F6F7;
+    font-family: "Open sans";
+    padding: 3rem;
+  }
+  .footer-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 3rem;
     }
-    #book{
-      background-size: 100%;
-    }
-    .timings{
-      display: block;
+    .logo{
       
+      flex-basis: 25%;
     }
-    .timings div{
-      margin-left: 9rem;
-      padding-bottom: 2rem;
-    }
-    .video_img img{
-      display: block;
-      margin: 0 auto;
-      width: 500px;
-    }
-    .review p{
-      width: 80%;
-      text-align: center;
-      margin: 0 auto;
-    }
-    .footer-section{
-      display: block;
-      text-align: center;
-      padding: 2rem 3rem;
-      }
-      .bottom_line{
-        display: block;
-        
-        padding: 2rem 4rem;
-        border-top: 1px solid #414646;
-      
-      }
-      .bottom_line p{
-        padding-bottom: 2rem;
-      }
-      .third-section{
-        /* margin: 2rem; */
-        background-color: #F2F6F7;
-        width: 100%;
-      }
+  .logo img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  padding: 0;
+  margin: 0;
+  }
+  .logo p{
+    width: 80%;
+  }
+  .contact{
+    font-family: raleway;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  .footer1 p{
+    padding-bottom: 2rem;
+  }
+  .footer1 input{
+    width: 250px;
+    height: 40px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid;
+  }
+  .bottom_line{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    border-top: 1px solid #414646;
+  
+  }
+  .icons i{
+    padding-left: 1rem;
+    color: orange;
+  }
 }
